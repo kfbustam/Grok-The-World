@@ -1,0 +1,238 @@
+<!-- 
+Written by: Karol Josef Bustamante
+API's used: CraftyJS
+-->
+<html>
+  <head>
+	<script type="text/javascript" src="crafty.js"></script>
+  </head>
+  <body>
+
+	<div id="game"></div>
+
+	
+	
+    <script>
+		var bgWidth = 800;
+		var bgHeight = 600;
+		//background width and height
+		Crafty.init(bgWidth,bgHeight, document.getElementById('game'));
+		Crafty.e("2D,DOM,Image").image("blueSky.jpg");
+
+    </script>
+	<script type="text/javascript" src="cardsParsed.js"></script>
+	<script>
+
+	
+	var bgWidth = 800;
+	var bgHeight = 500;
+	
+	var wordHeight = 45;
+	var wordWidth = 50;
+	//text & text boxes
+	var feelingsWord = Crafty.e("2D, DOM, Text").attr({x:17,y:160,w:wordWidth,h:wordHeight}).text("Feelings").textColor('white').textFont("type","Tahoma").unselectable();
+	var needsValuesWord = Crafty.e("2D, DOM, Text").attr({x:2,y:125,w:wordWidth,h:wordHeight}).text("Needs/Values").textColor('white').textFont("type","Tahoma").unselectable();
+	var very = Crafty.e("2D, DOM, Text").attr({x:25,y:230,w:wordWidth,h:wordHeight}).text("Very").textColor('white').textFont("type","Tahoma").unselectable();
+   var Vimportant = Crafty.e("2D, DOM, Text").attr({x:10,y:250,w:wordWidth,h:wordHeight}).text("Important").textColor('white').textFont("type","Tahoma").unselectable();	
+	var somewhat = Crafty.e("2D, DOM, Text").attr({x:9,y:375,w:wordWidth,h:wordHeight}).text("Somewhat").textColor('white').textFont("type","Tahoma").unselectable();
+	var Simportant =Crafty.e("2D, DOM, Text").attr({x:10,y:395,w:wordWidth,h:wordHeight}).text("Important").textColor('white').textFont("type","Tahoma").unselectable();
+	var least = Crafty.e("2D, DOM, Text").attr({x:27,y:520,w:wordWidth,h:wordHeight}).text("Least").textColor('white').textFont("type","Tahoma").unselectable();
+	var Limportant =Crafty.e("2D, DOM, Text").attr({x:13,y:540,w:wordWidth,h:wordHeight}).text("Important").textColor('white').textFont("type","Tahoma").unselectable();
+	
+	
+	//needs back face
+	var row=cardHeight+100
+	var column= cardWidth;
+	for(var x=0;x<10;x++){
+		var fadedFB = imgNBFaded.clone();
+		fadedFB.attr({x:column-10,y:100,w:cardWidth,h:cardHeight})
+			.bind("MouseOver", function(e) {this.alpha = .3;})
+			.bind("MouseOut", function(e) {this.alpha = 1;})
+			.checkHits('Blocks')
+			.bind("HitOn", function(hitData){
+
+			})
+			.bind("HitOff", function(comp){
+				
+			});
+		fadedFB.z = 1;
+		column+=70;				
+	}
+	
+	//feelings back face
+	var row=cardHeight+100;
+	var column= cardWidth;
+	for(var y=0;y<4;y++){
+		for(var x=0;x<10;x++){
+			var fadedNB = imgFBFaded.clone();
+			fadedNB.attr({x:column-10,y:row,w:cardWidth,h:cardHeight})
+				.bind("MouseOver", function(e) {this.alpha = .3;})
+				.bind("MouseOut", function(e) {this.alpha = 1;})
+				.checkHits('Blocks')
+				.bind("HitOn", function(hitData){
+
+				})
+				.bind("HitOff", function(comp){
+				
+				});
+			fadedNB.z = 1;
+			column+=70;				
+		}
+		column=100;
+		row+=100;
+    }
+	
+	//feelings back
+    imgFB.attr({x:bgWidth-cardWidth-42, y:0, w:cardWidth,h: cardHeight})
+        .bind("Click", function(e) {	
+		
+		
+		//feelings front face
+		var f = stackF.shift(); 
+		onTopPickPileF.push(f);
+		f.attr({x:bgWidth-68, y:5,w: cardWidth, h:cardHeight})
+			.bind("MouseOver", function(e) {
+				if(!dragging){
+					this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});
+					this.z = 3;
+				}
+			})
+			.bind("MouseOut", function(e) {
+				if(!dragging){
+					this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});
+					this.z=2;
+				}
+			})
+			.bind("DoubleClick", function(e){
+				var j = onTopPickPileF.indexOf(this);
+				if(j >= 0){
+					onTopPickPileF.splice(j,1);
+				}
+				if(j >= 0){
+					stackF.push(this);
+				}
+				this.attr({x:800, y:500, w:0,h: 0});
+
+				if(stackF.length > 0){
+					imgFB.attr({x:bgWidth-cardWidth-42, y:0, w:cardWidth,h: cardHeight});
+				}
+			})
+			.bind("StartDrag", function(e){
+				dragging = true;
+			})	
+			.bind("StopDrag", function(e){
+				dragging = false;
+				if(checkContained(this._x,this._y)){
+					var coordinates = coordinatesContained(this._x,this._y);
+					this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});	
+				}
+			});
+
+		if(stackF.length ==0){
+			this.attr({x:0, y:0, w:0,h: 0});
+			
+		}
+			f.z = 2;
+		});
+		
+	//needs back
+    imgNB.attr({x:0, y:0, w: cardWidth, h:cardHeight})
+		.bind("Click", function(e) {
+
+		
+		//needs front face
+		var n = stackN.shift();
+		onTopPickPileN.push(n);
+		n.attr({x:cardWidth-20, y:5, w:cardWidth,h: cardHeight})
+			.bind("MouseOver", function(e) {
+				if(!dragging){
+					this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});
+					this.z = 3;
+				}
+			})
+			.bind("MouseOut", function(e) {
+				if(!dragging){
+					this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});
+					this.z=2;
+				}
+			})
+			.bind("DoubleClick", function(e){
+				var j = onTopPickPileN.indexOf(this);
+				if(j >= 0){
+					onTopPickPileN.splice(j,1);
+				}
+				if(j >=0){
+					stackN.push(this);		
+				}
+				this.attr({x:800, y:500, w:0,h: 0});
+				if(stackN.length > 0){
+					imgNB.attr({x:0, y:0, w: cardWidth, h:cardHeight});
+				}
+			})
+			.bind("StartDrag", function(e){
+				dragging = true;
+			})				
+			.bind("StopDrag", function(e){
+				dragging = false;
+				if(checkContained(this._x,this._y)){
+					var coordinates = coordinatesContained(this._x,this._y);
+					this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});	
+				}
+			});		
+
+		if(stackN.length ==0){
+			imgNB.attr({x:0, y:0, w:0,h: 0});
+		}
+
+			n.z = 2;
+		});
+	
+	//function used to check if a card being dragged is within the confines of a faded back card
+	//pre-conditions: two crafty sprite entities (in this case the back faded card and a common playing card)
+	//post-conditions: it will return an object that contains the coordinate of one of the entities (in this case the back faded card)
+	function checkContained(cardX, cardY){
+		var row=cardHeight;
+		var column= cardWidth;
+		var cardMidX = cardX+(column/2);
+		var cardMidY = cardY+(row/2);
+		for(var y=0;y<5;y++){
+			for(var x=0;x<10;x++){
+				if(cardMidX > column && cardMidX<column+cardWidth && cardMidY < row+cardHeight && cardMidY >row){return true;}
+				column+=70;				
+			}
+			column=100;
+			row+=100;
+		}
+		return false;
+	}
+	
+	//checks if a card is contained within another card
+	//pre-conditions: two crafty sprite entities (in this case the back faded card and a common playing card)
+	//post-conditions: it will return true if it is contained and false otherwise
+	function coordinatesContained(cardX, cardY){
+		var row=cardHeight;
+		var column= cardWidth;
+		var cardMidX = cardX+(column/2);
+		var cardMidY = cardY+(row/2);
+		var coordinates;
+		for(var y=0;y<5;y++){
+			for(var x=0;x<10;x++){
+				if(cardMidX > column && cardMidX<column+cardWidth && cardMidY < row+cardHeight && cardMidY >row){
+					var coordinates = {x:column,y:row};
+					return coordinates;
+				}
+				column+=70;				
+			}
+			column=100;
+			row+=100;
+		}
+		return coordinates;
+	}
+	
+
+    </script>
+
+  </body>
+</html>
+
+

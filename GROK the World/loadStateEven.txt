@@ -1,0 +1,560 @@
+if (localStorage.img2!== null) {
+var pair = localStorage.getItem("img2");
+var coords = pair.split(",");
+img2.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img2.z=2;if(img2.x!==0){onTopPickPileF.push(img2);
+var j = stackF.indexOf(img2);
+stackF.splice(j,1);}
+}
+if (localStorage.img4!== null) {
+var pair = localStorage.getItem("img4");
+var coords = pair.split(",");
+img4.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img4.z=2;if(img4.x!==0){onTopPickPileF.push(img4);
+var j = stackF.indexOf(img4);
+stackF.splice(j,1);}
+}
+if (localStorage.img6!== null) {
+var pair = localStorage.getItem("img6");
+var coords = pair.split(",");
+img6.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img6.z=2;if(img6.x!==0){onTopPickPileF.push(img6);
+var j = stackF.indexOf(img6);
+stackF.splice(j,1);}
+}
+if (localStorage.img8!== null) {
+var pair = localStorage.getItem("img8");
+var coords = pair.split(",");
+img8.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img8.z=2;if(img8.x!==0){onTopPickPileF.push(img8);
+var j = stackF.indexOf(img8);
+stackF.splice(j,1);}
+}
+if (localStorage.img10!== null) {
+var pair = localStorage.getItem("img10");
+var coords = pair.split(",");
+img10.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img10.z=2;if(img10.x!==0){onTopPickPileF.push(img10);
+var j = stackF.indexOf(img10);
+stackF.splice(j,1);}
+}
+if (localStorage.img12!== null) {
+var pair = localStorage.getItem("img12");
+var coords = pair.split(",");
+img12.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img12.z=2;if(img12.x!==0){onTopPickPileF.push(img12);
+var j = stackF.indexOf(img12);
+stackF.splice(j,1);}
+}
+if (localStorage.img14!== null) {
+var pair = localStorage.getItem("img14");
+var coords = pair.split(",");
+img14.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img14.z=2;if(img14.x!==0){onTopPickPileF.push(img14);
+var j = stackF.indexOf(img14);
+stackF.splice(j,1);}
+}
+if (localStorage.img16!== null) {
+var pair = localStorage.getItem("img16");
+var coords = pair.split(",");
+img16.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img16.z=2;if(img16.x!==0){onTopPickPileF.push(img16);
+var j = stackF.indexOf(img16);
+stackF.splice(j,1);}
+}
+if (localStorage.img18!== null) {
+var pair = localStorage.getItem("img18");
+var coords = pair.split(",");
+img18.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img18.z=2;if(img18.x!==0){onTopPickPileF.push(img18);
+var j = stackF.indexOf(img18);
+stackF.splice(j,1);}
+}
+if (localStorage.img20!== null) {
+var pair = localStorage.getItem("img20");
+var coords = pair.split(",");
+img20.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img20.z=2;if(img20.x!==0){onTopPickPileF.push(img20);
+var j = stackF.indexOf(img20);
+stackF.splice(j,1);}
+}
+if (localStorage.img22!== null) {
+var pair = localStorage.getItem("img22");
+var coords = pair.split(",");
+img22.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img22.z=2;if(img22.x!==0){onTopPickPileF.push(img22);
+var j = stackF.indexOf(img22);
+stackF.splice(j,1);}
+}
+if (localStorage.img24!== null) {
+var pair = localStorage.getItem("img24");
+var coords = pair.split(",");
+img24.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img24.z=2;if(img24.x!==0){onTopPickPileF.push(img24);
+var j = stackF.indexOf(img24);
+stackF.splice(j,1);}
+}
+if (localStorage.img26!== null) {
+var pair = localStorage.getItem("img26");
+var coords = pair.split(",");
+img26.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img26.z=2;if(img26.x!==0){onTopPickPileF.push(img26);
+var j = stackF.indexOf(img26);
+stackF.splice(j,1);}
+}
+if (localStorage.img28!== null) {
+var pair = localStorage.getItem("img28");
+var coords = pair.split(",");
+img28.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img28.z=2;if(img28.x!==0){onTopPickPileF.push(img28);
+var j = stackF.indexOf(img28);
+stackF.splice(j,1);}
+}
+if (localStorage.img30!== null) {
+var pair = localStorage.getItem("img30");
+var coords = pair.split(",");
+img30.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img30.z=2;if(img30.x!==0){onTopPickPileF.push(img30);
+var j = stackF.indexOf(img30);
+stackF.splice(j,1);}
+}
+if (localStorage.img32!== null) {
+var pair = localStorage.getItem("img32");
+var coords = pair.split(",");
+img32.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img32.z=2;if(img32.x!==0){onTopPickPileF.push(img32);
+var j = stackF.indexOf(img32);
+stackF.splice(j,1);}
+}
+if (localStorage.img34!== null) {
+var pair = localStorage.getItem("img34");
+var coords = pair.split(",");
+img34.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img34.z=2;if(img34.x!==0){onTopPickPileF.push(img34);
+var j = stackF.indexOf(img34);
+stackF.splice(j,1);}
+}
+if (localStorage.img36!== null) {
+var pair = localStorage.getItem("img36");
+var coords = pair.split(",");
+img36.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img36.z=2;if(img36.x!==0){onTopPickPileF.push(img36);
+var j = stackF.indexOf(img36);
+stackF.splice(j,1);}
+}
+if (localStorage.img38!== null) {
+var pair = localStorage.getItem("img38");
+var coords = pair.split(",");
+img38.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img38.z=2;if(img38.x!==0){onTopPickPileF.push(img38);
+var j = stackF.indexOf(img38);
+stackF.splice(j,1);}
+}
+if (localStorage.img40!== null) {
+var pair = localStorage.getItem("img40");
+var coords = pair.split(",");
+img40.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img40.z=2;if(img40.x!==0){onTopPickPileF.push(img40);
+var j = stackF.indexOf(img40);
+stackF.splice(j,1);}
+}
+if (localStorage.img42!== null) {
+var pair = localStorage.getItem("img42");
+var coords = pair.split(",");
+img42.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img42.z=2;if(img42.x!==0){onTopPickPileF.push(img42);
+var j = stackF.indexOf(img42);
+stackF.splice(j,1);}
+}
+if (localStorage.img44!== null) {
+var pair = localStorage.getItem("img44");
+var coords = pair.split(",");
+img44.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img44.z=2;if(img44.x!==0){onTopPickPileF.push(img44);
+var j = stackF.indexOf(img44);
+stackF.splice(j,1);}
+}
+if (localStorage.img46!== null) {
+var pair = localStorage.getItem("img46");
+var coords = pair.split(",");
+img46.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img46.z=2;if(img46.x!==0){onTopPickPileF.push(img46);
+var j = stackF.indexOf(img46);
+stackF.splice(j,1);}
+}
+if (localStorage.img48!== null) {
+var pair = localStorage.getItem("img48");
+var coords = pair.split(",");
+img48.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img48.z=2;if(img48.x!==0){onTopPickPileF.push(img48);
+var j = stackF.indexOf(img48);
+stackF.splice(j,1);}
+}
+if (localStorage.img50!== null) {
+var pair = localStorage.getItem("img50");
+var coords = pair.split(",");
+img50.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img50.z=2;if(img50.x!==0){onTopPickPileF.push(img50);
+var j = stackF.indexOf(img50);
+stackF.splice(j,1);}
+}
+if (localStorage.img52!== null) {
+var pair = localStorage.getItem("img52");
+var coords = pair.split(",");
+img52.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img52.z=2;if(img52.x!==0){onTopPickPileF.push(img52);
+var j = stackF.indexOf(img52);
+stackF.splice(j,1);}
+}
+if (localStorage.img54!== null) {
+var pair = localStorage.getItem("img54");
+var coords = pair.split(",");
+img54.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img54.z=2;if(img54.x!==0){onTopPickPileF.push(img54);
+var j = stackF.indexOf(img54);
+stackF.splice(j,1);}
+}
+if (localStorage.img56!== null) {
+var pair = localStorage.getItem("img56");
+var coords = pair.split(",");
+img56.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img56.z=2;if(img56.x!==0){onTopPickPileF.push(img56);
+var j = stackF.indexOf(img56);
+stackF.splice(j,1);}
+}
+if (localStorage.img58!== null) {
+var pair = localStorage.getItem("img58");
+var coords = pair.split(",");
+img58.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img58.z=2;if(img58.x!==0){onTopPickPileF.push(img58);
+var j = stackF.indexOf(img58);
+stackF.splice(j,1);}
+}
+if (localStorage.img60!== null) {
+var pair = localStorage.getItem("img60");
+var coords = pair.split(",");
+img60.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img60.z=2;if(img60.x!==0){onTopPickPileF.push(img60);
+var j = stackF.indexOf(img60);
+stackF.splice(j,1);}
+}
+if (localStorage.img62!== null) {
+var pair = localStorage.getItem("img62");
+var coords = pair.split(",");
+img62.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img62.z=2;if(img62.x!==0){onTopPickPileF.push(img62);
+var j = stackF.indexOf(img62);
+stackF.splice(j,1);}
+}
+if (localStorage.img64!== null) {
+var pair = localStorage.getItem("img64");
+var coords = pair.split(",");
+img64.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img64.z=2;if(img64.x!==0){onTopPickPileF.push(img64);
+var j = stackF.indexOf(img64);
+stackF.splice(j,1);}
+}
+if (localStorage.img66!== null) {
+var pair = localStorage.getItem("img66");
+var coords = pair.split(",");
+img66.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img66.z=2;if(img66.x!==0){onTopPickPileF.push(img66);
+var j = stackF.indexOf(img66);
+stackF.splice(j,1);}
+}
+if (localStorage.img68!== null) {
+var pair = localStorage.getItem("img68");
+var coords = pair.split(",");
+img68.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img68.z=2;if(img68.x!==0){onTopPickPileF.push(img68);
+var j = stackF.indexOf(img68);
+stackF.splice(j,1);}
+}
+if (localStorage.img70!== null) {
+var pair = localStorage.getItem("img70");
+var coords = pair.split(",");
+img70.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img70.z=2;if(img70.x!==0){onTopPickPileF.push(img70);
+var j = stackF.indexOf(img70);
+stackF.splice(j,1);}
+}
+if (localStorage.img72!== null) {
+var pair = localStorage.getItem("img72");
+var coords = pair.split(",");
+img72.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img72.z=2;if(img72.x!==0){onTopPickPileF.push(img72);
+var j = stackF.indexOf(img72);
+stackF.splice(j,1);}
+}
+if (localStorage.img74!== null) {
+var pair = localStorage.getItem("img74");
+var coords = pair.split(",");
+img74.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img74.z=2;if(img74.x!==0){onTopPickPileF.push(img74);
+var j = stackF.indexOf(img74);
+stackF.splice(j,1);}
+}
+if (localStorage.img76!== null) {
+var pair = localStorage.getItem("img76");
+var coords = pair.split(",");
+img76.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img76.z=2;if(img76.x!==0){onTopPickPileF.push(img76);
+var j = stackF.indexOf(img76);
+stackF.splice(j,1);}
+}
+if (localStorage.img78!== null) {
+var pair = localStorage.getItem("img78");
+var coords = pair.split(",");
+img78.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img78.z=2;if(img78.x!==0){onTopPickPileF.push(img78);
+var j = stackF.indexOf(img78);
+stackF.splice(j,1);}
+}
+if (localStorage.img80!== null) {
+var pair = localStorage.getItem("img80");
+var coords = pair.split(",");
+img80.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img80.z=2;if(img80.x!==0){onTopPickPileF.push(img80);
+var j = stackF.indexOf(img80);
+stackF.splice(j,1);}
+}
+if (localStorage.img82!== null) {
+var pair = localStorage.getItem("img82");
+var coords = pair.split(",");
+img82.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img82.z=2;if(img82.x!==0){onTopPickPileF.push(img82);
+var j = stackF.indexOf(img82);
+stackF.splice(j,1);}
+}
+if (localStorage.img84!== null) {
+var pair = localStorage.getItem("img84");
+var coords = pair.split(",");
+img84.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img84.z=2;if(img84.x!==0){onTopPickPileF.push(img84);
+var j = stackF.indexOf(img84);
+stackF.splice(j,1);}
+}
+if (localStorage.img86!== null) {
+var pair = localStorage.getItem("img86");
+var coords = pair.split(",");
+img86.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img86.z=2;if(img86.x!==0){onTopPickPileF.push(img86);
+var j = stackF.indexOf(img86);
+stackF.splice(j,1);}
+}
+if (localStorage.img88!== null) {
+var pair = localStorage.getItem("img88");
+var coords = pair.split(",");
+img88.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img88.z=2;if(img88.x!==0){onTopPickPileF.push(img88);
+var j = stackF.indexOf(img88);
+stackF.splice(j,1);}
+}
+if (localStorage.img90!== null) {
+var pair = localStorage.getItem("img90");
+var coords = pair.split(",");
+img90.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img90.z=2;if(img90.x!==0){onTopPickPileF.push(img90);
+var j = stackF.indexOf(img90);
+stackF.splice(j,1);}
+}
+if (localStorage.img92!== null) {
+var pair = localStorage.getItem("img92");
+var coords = pair.split(",");
+img92.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img92.z=2;if(img92.x!==0){onTopPickPileF.push(img92);
+var j = stackF.indexOf(img92);
+stackF.splice(j,1);}
+}
+if (localStorage.img94!== null) {
+var pair = localStorage.getItem("img94");
+var coords = pair.split(",");
+img94.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img94.z=2;if(img94.x!==0){onTopPickPileF.push(img94);
+var j = stackF.indexOf(img94);
+stackF.splice(j,1);}
+}
+if (localStorage.img96!== null) {
+var pair = localStorage.getItem("img96");
+var coords = pair.split(",");
+img96.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img96.z=2;if(img96.x!==0){onTopPickPileF.push(img96);
+var j = stackF.indexOf(img96);
+stackF.splice(j,1);}
+}
+if (localStorage.img98!== null) {
+var pair = localStorage.getItem("img98");
+var coords = pair.split(",");
+img98.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img98.z=2;if(img98.x!==0){onTopPickPileF.push(img98);
+var j = stackF.indexOf(img98);
+stackF.splice(j,1);}
+}
+if (localStorage.img100!== null) {
+var pair = localStorage.getItem("img100");
+var coords = pair.split(",");
+img100.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img100.z=2;if(img100.x!==0){onTopPickPileF.push(img100);
+var j = stackF.indexOf(img100);
+stackF.splice(j,1);}
+}
+if (localStorage.img102!== null) {
+var pair = localStorage.getItem("img102");
+var coords = pair.split(",");
+img102.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img102.z=2;if(img102.x!==0){onTopPickPileF.push(img102);
+var j = stackF.indexOf(img102);
+stackF.splice(j,1);}
+}
+if (localStorage.img104!== null) {
+var pair = localStorage.getItem("img104");
+var coords = pair.split(",");
+img104.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img104.z=2;if(img104.x!==0){onTopPickPileF.push(img104);
+var j = stackF.indexOf(img104);
+stackF.splice(j,1);}
+}
+if (localStorage.img106!== null) {
+var pair = localStorage.getItem("img106");
+var coords = pair.split(",");
+img106.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img106.z=2;if(img106.x!==0){onTopPickPileF.push(img106);
+var j = stackF.indexOf(img106);
+stackF.splice(j,1);}
+}
+if (localStorage.img108!== null) {
+var pair = localStorage.getItem("img108");
+var coords = pair.split(",");
+img108.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img108.z=2;if(img108.x!==0){onTopPickPileF.push(img108);
+var j = stackF.indexOf(img108);
+stackF.splice(j,1);}
+}
+if (localStorage.img110!== null) {
+var pair = localStorage.getItem("img110");
+var coords = pair.split(",");
+img110.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img110.z=2;if(img110.x!==0){onTopPickPileF.push(img110);
+var j = stackF.indexOf(img110);
+stackF.splice(j,1);}
+}
+if (localStorage.img112!== null) {
+var pair = localStorage.getItem("img112");
+var coords = pair.split(",");
+img112.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img112.z=2;if(img112.x!==0){onTopPickPileF.push(img112);
+var j = stackF.indexOf(img112);
+stackF.splice(j,1);}
+}
+if (localStorage.img114!== null) {
+var pair = localStorage.getItem("img114");
+var coords = pair.split(",");
+img114.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img114.z=2;if(img114.x!==0){onTopPickPileF.push(img114);
+var j = stackF.indexOf(img114);
+stackF.splice(j,1);}
+}
+if (localStorage.img116!== null) {
+var pair = localStorage.getItem("img116");
+var coords = pair.split(",");
+img116.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img116.z=2;if(img116.x!==0){onTopPickPileF.push(img116);
+var j = stackF.indexOf(img116);
+stackF.splice(j,1);}
+}
+if (localStorage.img118!== null) {
+var pair = localStorage.getItem("img118");
+var coords = pair.split(",");
+img118.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img118.z=2;if(img118.x!==0){onTopPickPileF.push(img118);
+var j = stackF.indexOf(img118);
+stackF.splice(j,1);}
+}
+if (localStorage.img120!== null) {
+var pair = localStorage.getItem("img120");
+var coords = pair.split(",");
+img120.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img120.z=2;if(img120.x!==0){onTopPickPileF.push(img120);
+var j = stackF.indexOf(img120);
+stackF.splice(j,1);}
+}
+if (localStorage.img122!== null) {
+var pair = localStorage.getItem("img122");
+var coords = pair.split(",");
+img122.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img122.z=2;if(img122.x!==0){onTopPickPileF.push(img122);
+var j = stackF.indexOf(img122);
+stackF.splice(j,1);}
+}
+if (localStorage.img124!== null) {
+var pair = localStorage.getItem("img124");
+var coords = pair.split(",");
+img124.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img124.z=2;if(img124.x!==0){onTopPickPileF.push(img124);
+var j = stackF.indexOf(img124);
+stackF.splice(j,1);}
+}
+if (localStorage.img126!== null) {
+var pair = localStorage.getItem("img126");
+var coords = pair.split(",");
+img126.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img126.z=2;if(img126.x!==0){onTopPickPileF.push(img126);
+var j = stackF.indexOf(img126);
+stackF.splice(j,1);}
+}
+if (localStorage.img128!== null) {
+var pair = localStorage.getItem("img128");
+var coords = pair.split(",");
+img128.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img128.z=2;if(img128.x!==0){onTopPickPileF.push(img128);
+var j = stackF.indexOf(img128);
+stackF.splice(j,1);}
+}
+if (localStorage.img130!== null) {
+var pair = localStorage.getItem("img130");
+var coords = pair.split(",");
+img130.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img130.z=2;if(img130.x!==0){onTopPickPileF.push(img130);
+var j = stackF.indexOf(img130);
+stackF.splice(j,1);}
+}
+if (localStorage.img132!== null) {
+var pair = localStorage.getItem("img132");
+var coords = pair.split(",");
+img132.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img132.z=2;if(img132.x!==0){onTopPickPileF.push(img132);
+var j = stackF.indexOf(img132);
+stackF.splice(j,1);}
+}
+if (localStorage.img134!== null) {
+var pair = localStorage.getItem("img134");
+var coords = pair.split(",");
+img134.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img134.z=2;if(img134.x!==0){onTopPickPileF.push(img134);
+var j = stackF.indexOf(img134);
+stackF.splice(j,1);}
+}
+if (localStorage.img136!== null) {
+var pair = localStorage.getItem("img136");
+var coords = pair.split(",");
+img136.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img136.z=2;if(img136.x!==0){onTopPickPileF.push(img136);
+var j = stackF.indexOf(img136);
+stackF.splice(j,1);}
+}
+if (localStorage.img138!== null) {
+var pair = localStorage.getItem("img138");
+var coords = pair.split(",");
+img138.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img138.z=2;if(img138.x!==0){onTopPickPileF.push(img138);
+var j = stackF.indexOf(img138);
+stackF.splice(j,1);}
+}
+if (localStorage.img140!== null) {
+var pair = localStorage.getItem("img140");
+var coords = pair.split(",");
+img140.attr({x:parseInt(coords[0]), y:parseInt(coords[1]),w: parseInt(coords[2]), h:parseInt(coords[3])}).bind("MouseOver", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});this.z = 3;}}).bind("MouseOut", function(e) {if(!dragging){this.attr({x:this._x, y:this._y, w:cardWidth,h: cardHeight});this.z=2;}}).bind("DoubleClick", function(e){var j = onTopPickPileF.indexOf(this);stackF.unshift(this);onTopPickPileF.splice(j,1);this.attr({x:800, y:500, w:0,h: 0});if(stackF.length > 0){imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});}}).bind("StartDrag", function(e){dragging = true;})	.bind("StopDrag", function(e){dragging = false;if(checkContained(this._x,this._y)){var coordinates = coordinatesContained(this._x,this._y);this.attr({x:coordinates.x-5,y:coordinates.y+5,w:cardWidth,h:cardHeight});}});
+img140.z=2;if(img140.x!==0){onTopPickPileF.push(img140);
+var j = stackF.indexOf(img140);
+stackF.splice(j,1);}
+}
