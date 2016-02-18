@@ -30,10 +30,10 @@ API's used: CraftyJS
 	var wordHeight = 45;
 	var wordWidth = 50;
 	//text & text boxes
-	var feelingsWord = Crafty.e("2D, DOM, Text").attr({x:17,y:160,w:wordWidth,h:wordHeight}).text("Feelings").textColor('white').textFont("type","Tahoma").unselectable();
-	var needsValuesWord = Crafty.e("2D, DOM, Text").attr({x:2,y:125,w:wordWidth,h:wordHeight}).text("Needs/Values").textColor('white').textFont("type","Tahoma").unselectable();
-	var very = Crafty.e("2D, DOM, Text").attr({x:25,y:230,w:wordWidth,h:wordHeight}).text("Very").textColor('white').textFont("type","Tahoma").unselectable();
-   var Vimportant = Crafty.e("2D, DOM, Text").attr({x:10,y:250,w:wordWidth,h:wordHeight}).text("Important").textColor('white').textFont("type","Tahoma").unselectable();	
+	var feelingsWord = Crafty.e("2D, DOM, Text").attr({x:17,y:140,w:wordWidth,h:wordHeight}).text("Feelings").textColor('white').textFont("type","Tahoma").unselectable();
+	var needsValuesWord = Crafty.e("2D, DOM, Text").attr({x:2,y:230,w:wordWidth,h:wordHeight}).text("Needs/Values").textColor('white').textFont("type","Tahoma").unselectable();
+	var very = Crafty.e("2D, DOM, Text").attr({x:25,y:255,w:wordWidth,h:wordHeight}).text("Very").textColor('white').textFont("type","Tahoma").unselectable();
+    var Vimportant = Crafty.e("2D, DOM, Text").attr({x:10,y:275,w:wordWidth,h:wordHeight}).text("Important").textColor('white').textFont("type","Tahoma").unselectable();	
 	var somewhat = Crafty.e("2D, DOM, Text").attr({x:9,y:375,w:wordWidth,h:wordHeight}).text("Somewhat").textColor('white').textFont("type","Tahoma").unselectable();
 	var Simportant =Crafty.e("2D, DOM, Text").attr({x:10,y:395,w:wordWidth,h:wordHeight}).text("Important").textColor('white').textFont("type","Tahoma").unselectable();
 	var least = Crafty.e("2D, DOM, Text").attr({x:27,y:520,w:wordWidth,h:wordHeight}).text("Least").textColor('white').textFont("type","Tahoma").unselectable();
@@ -83,18 +83,18 @@ API's used: CraftyJS
     }
 	
 	//feelings back
-    imgFB.attr({x:bgWidth-cardWidth-42, y:0, w:cardWidth,h: cardHeight})
+    imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight})
         .bind("Click", function(e) {	
 		
 		
 		//feelings front face
 		var f = stackF.shift(); 
 		onTopPickPileF.push(f);
-		f.attr({x:bgWidth-68, y:5,w: cardWidth, h:cardHeight})
-			.bind("MouseOver", function(e) {
+		f.attr({x:bgWidth-cardWidth-270, y:5,w: cardWidth, h:cardHeight})
+			.bind("Click", function(e) {
 				if(!dragging){
 					this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});
-					this.z = 3;
+					this.z = 3;					
 				}
 			})
 			.bind("MouseOut", function(e) {
@@ -114,7 +114,7 @@ API's used: CraftyJS
 				this.attr({x:800, y:500, w:0,h: 0});
 
 				if(stackF.length > 0){
-					imgFB.attr({x:bgWidth-cardWidth-42, y:0, w:cardWidth,h: cardHeight});
+					imgFB.attr({x:bgWidth-68, y:0, w:cardWidth,h: cardHeight});
 				}
 			})
 			.bind("StartDrag", function(e){
@@ -132,7 +132,7 @@ API's used: CraftyJS
 			this.attr({x:0, y:0, w:0,h: 0});
 			
 		}
-			f.z = 2;
+			f.z = 3;
 		});
 		
 	//needs back
@@ -143,8 +143,8 @@ API's used: CraftyJS
 		//needs front face
 		var n = stackN.shift();
 		onTopPickPileN.push(n);
-		n.attr({x:cardWidth-20, y:5, w:cardWidth,h: cardHeight})
-			.bind("MouseOver", function(e) {
+		n.attr({x:cardWidth+170, y:5, w:cardWidth,h: cardHeight})
+			.bind("Click", function(e) {
 				if(!dragging){
 					this.attr({x:this._x, y:this._y, w:cardWidth+200,h: cardHeight+200});
 					this.z = 3;
@@ -184,7 +184,7 @@ API's used: CraftyJS
 			imgNB.attr({x:0, y:0, w:0,h: 0});
 		}
 
-			n.z = 2;
+			n.z = 3;
 		});
 	
 	//function used to check if a card being dragged is within the confines of a faded back card

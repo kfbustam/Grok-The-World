@@ -88,39 +88,22 @@
       }
     }
   </style>
-</div>	
+</div>
+
+	<p id="shortDescription">
+
+		Use GROK Online as as a gateway to clarity and self-empathy around a specific issue. GROK Online introduces the popular GROK games which include 20 descriptions of ways for yourself, friends, couples, and groups to play. Oh ~ and grok is a Martian word from the novel, Stranger in a Strange Land by Robert Heinlien, meaning “to deeply understand.”    Enjoy!
+	</p>
+	<style type="text/css">
+		.shortDescription {
+			display: inline;
+			p, a, H1, H2, H3, H4, H5, .node .content, .block .content {
+				font-family: "futura-pt";
+			}
+		}
+	</style>
 
 	<div style="width: 100%;" class="section" id ="TheGame">
-		<div id="contentframe" style="float: left; " width: 365;>
-		    <button type="button" class="btn btn-primary" id="Forward" >
-		    	Click here at end of game
-		    </button>
-		    <div>
-				<script type="text/javascript" src="//use.typekit.net/nwm5yvv.js""></script>
-				<script type="text/javascript" src="//use.typekit.net/ufe2kzc.js"></script>
-
-				<p id="text">	In one or two sentences, write down a personal issue, situation or concern for which you are wanting more clarity and understanding in your life: </p>
-				<p id="text">(For example: I had a date Saturday night and they called me a half hour after we were supposed to meet to say they had to cancel.)</p>
-					
-
-				<dl>
-					<textarea rows='10' cols='40' name='textarea' id='commentIntro'></textarea>
-				</dl>
-
-				<style type="text/css">
-					form {
-						display: inline;
-						p, a, H1, H2, H3, H4, H5, .node .content, .block .content {
-							font-family: "futura-pt";
-						}
-					}
-					#text{
-						width: 365px;
-					}
-				</style>
-			</div>
-		</div>
-
 		<div id="contentframe" style="float: left; " width: 110;>
 		    <button type="button" class="btn btn-primary" id="DetailedInstructionsButton">Detailed Instructions</button>
 		    <button type="button" class="btn btn-primary" id="ResetButton">Start over (New game)</button>
@@ -138,6 +121,28 @@
 		      	}
 
 	    	</style>
+		</div>
+		<div id="contentframe" style="float: left; " width: 365;>
+			     <iframe src="GrokDescription.html" width="700" height="110" align="left"frameBorder="0" scrolling="no"></iframe>
+				<dl>
+					<textarea rows='4' cols='100' name='textarea' id='commentIntro'></textarea>
+				</dl>
+			    <button type="button" class="buttonEnd" id="Forward" >
+			    	Click here at end of game
+			    </button>
+			    <style type="text/css">
+			      	.buttonEnd{
+			        	white-space:normal !important;
+			        	max-width: 90px;
+			        	max-height: 40px;
+			      	}
+			    </style>
+		</div>
+
+
+
+		<br style="clear: left;" />
+	</div>
 	    	<script type="text/javascript">
 			    document.getElementById("DetailedInstructionsButton").onclick = function () {
 					   var e = document.getElementById('DetailedInstructions');
@@ -205,14 +210,9 @@
 					}
 			    };
 			</script>
-		</div>
-		<div id="contentframe" style="float: left; " width: 365;>
-			     <iframe src="GrokDescription.html" width="365" height="320" align="left"frameBorder="0"></iframe>
-		</div>
-		 <br style="clear: left;" />
+
 
 		 <iframe src="craftyGROK.html" width="820" height="620" frameBorder="0"></iframe>
-	</div>
 
 
 	<span property="dc:title" content="New Grok Card Games" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
